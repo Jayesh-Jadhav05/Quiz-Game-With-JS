@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        
+        <div class="container"> 
+            <section class="First-page section">
+                <h1>😎Play Game😎</h1>
+
+                <img src="first-img.webp" alt="game start image">
+
+                <h3>Let's Start The Game</h3>
+                <div class="btn-container">
+                    <button class="btn easy">Easy Level</button>
+                    <button class="btn medium">Medium Level</button>
+                    <button class="btn hard">Hard Level</button>
+                </div>
+            </section>
+
+            <section class="Game-part hide-game">
+                
+                <p id="passes"> </p>
+                <h3 id="noguess"> Guess A Number Between 1-10 </h3>   
+                <p id="output">Enter A Number Below</p>
+        
+                    <input id="inputval" placeholder="Enter Your Guess" autocomplete="off">
+                    <button id="check" class="btn">Check</button>
+                    <button id="exit" class="btn" onclick="location.reload()">Exit</button>
+            </section>
+        </div>
+
+    </main>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

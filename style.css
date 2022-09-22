@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Oswald:wght@500&family=Roboto+Slab:wght@400;500&display=swap');
+
+/* font-family: 'Cinzel', serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Slab', serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Cinzel', serif
+}
+
+
+
+        /* *********************************
+              Reuseable Code Start
+ ******************************** */
+     
+ .btn{
+    padding: .5rem;
+    background-image: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(67, 175, 252) 100%);
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    color: black;
+ }
+ .btn:hover{
+    box-shadow: 10px 5px 20px 0 rgb(0,0,0.5);
+ }
+
+
+  /* *********************************
+              Main Section Start
+ ******************************** */
+      
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg,#ff216d,#2196f3);
+}
+
+.container{
+    width: 350px;
+    /* height: 500px; */
+    background-color:rgb(180, 6, 255);
+    border-radius: 1.5rem;
+    box-shadow: 25px 25px 75px rgba(0,0,0,0.25),
+    10px 10px 70px rgba(0,0,0,0.25),
+    inset -5px -5px 15px rgba(0,0,0,0.5),
+    inset 5px 5px 15px rgba(0,0,0,0.5);
+}
+.First-page{
+    display: flex;
+   flex-direction: column;
+   /* display: none; */
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.First-page img{
+    width: 90%;
+    margin: 2rem auto;
+    border-radius: 1rem;
+}
+
+h3{
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.btn-container{
+    display: flex;
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+  /* *********************************
+              Game Part Start
+ ******************************** */
+
+
+
+.Game-part h3{
+    margin-top: 2rem;
+    font-size: 20px;
+}
+
+.hide-game{
+    display: none;
+}
+
+.hide-first-page{
+    display: none;
+}
+
+input{
+    text-align: center;
+    padding: 0.5rem 0;
+    width: 80%;
+    font-size: 1rem;
+    border-radius: 0.6rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    margin: 1.8rem 1.8rem;
+}
+#output{
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    /* text-shadow: 5px 5px 10px rgba(0,0,0,0.9); */
+}
+#passes{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color:gold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-top: 1rem;
+    margin-left: 9rem;
+}
+#play{
+    display: none;
+}
+#noguess{
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
